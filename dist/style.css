@@ -647,10 +647,6 @@ h2 {
   min-width: 100%;
 }
 
-.max-w-sm {
-  max-width: 24rem;
-}
-
 .max-w-md {
   max-width: 28rem;
 }
@@ -686,11 +682,6 @@ h2 {
 .bg-verydarkgrayishblue {
   --tw-bg-opacity: 1;
   background-color: hsl(217 19% 35% / var(--tw-bg-opacity));
-}
-
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
 }
 
 .font-sans {
@@ -746,19 +737,6 @@ h2 {
     width: 100%;
   }
 
-  .lg\:w-auto {
-    width: auto;
-  }
-
-  .lg\:w-fit {
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
-  .lg\:w-0 {
-    width: 0px;
-  }
-
   .lg\:max-w-none {
     max-width: none;
   }
@@ -771,20 +749,11 @@ h2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:gap-5 {
-    gap: 1.25rem;
-  }
-
   .lg\:gap-7 {
     gap: 1.75rem;
   }
 
   .lg\:place-self-stretch {
     place-self: stretch;
-  }
-
-  .lg\:px-14 {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
   }
 }
