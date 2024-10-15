@@ -558,9 +558,10 @@ video {
   padding: 1.75rem;
   margin: 1rem 0;
   border-radius: 0.5rem;
-  max-width: 24rem;
-  width: 86%;
-  position: relative;
+  max-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .profile-img {
@@ -568,6 +569,10 @@ video {
   height: 2.5rem;
   margin-right: 1rem;
   border-radius: 9999px;
+}
+
+.profile-text p {
+  white-space: nowrap;
 }
 
 h2 {
@@ -598,24 +603,64 @@ h2 {
   z-index: 10;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-start-4 {
+  grid-column-start: 4;
+}
+
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
+.row-start-1 {
+  grid-row-start: 1;
+}
+
+.row-start-2 {
+  grid-row-start: 2;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .min-h-svh {
   min-height: 100svh;
 }
 
+.w-\[86\%\] {
+  width: 86%;
+}
+
 .min-w-full {
   min-width: 100%;
 }
 
-.flex-col {
-  flex-direction: column;
+.max-w-sm {
+  max-width: 24rem;
 }
 
-.items-center {
-  align-items: center;
+.max-w-md {
+  max-width: 28rem;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.place-self-center {
+  place-self: center;
 }
 
 .bg-White {
@@ -682,4 +727,64 @@ h2 {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+@media (min-width: 1024px) {
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:m-0 {
+    margin: 0px;
+  }
+
+  .lg\:grid {
+    display: grid;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:w-auto {
+    width: auto;
+  }
+
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .lg\:w-0 {
+    width: 0px;
+  }
+
+  .lg\:max-w-none {
+    max-width: none;
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .lg\:gap-7 {
+    gap: 1.75rem;
+  }
+
+  .lg\:place-self-stretch {
+    place-self: stretch;
+  }
+
+  .lg\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
 }
