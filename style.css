@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card {
+        padding: 1.75rem;
+        margin: 1rem 0;
+        border-radius: 0.5rem;
+        max-width: 32rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile-img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        border-radius: 9999px;
+    }
+
+    .profile-text p {
+        white-space: nowrap;
+    }
+
+    h2 {
+        line-height: 1.75rem;
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
